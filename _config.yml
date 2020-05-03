@@ -38,7 +38,7 @@ defaults:
       type: "post"
     values:
         layout: "posts"
-        permalink: blog/:categories/:title
+        permalink: :categories/:title
   - 
     scope:
       path: "_posts/delivery-demolition"
