@@ -7,7 +7,7 @@ layout: wrapper
 		<div class="blog-container blog-selection">
 		{% for post in site.posts %}
 			<ul>
-				<a href="{{post.url}}">{{post.title}}</a>
+				<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
 				{{post.excerpt}}
 			</ul>
 			<hr>

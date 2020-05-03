@@ -3,7 +3,6 @@ layout: posts
 title:  "Hello, World!"
 date:   2020-05-03 00:00:01 +0200
 categories: update
-permalink: blog/hello-world
 ---
 
 This is my test post. This post will remain hidden as it only allows me to see the capabilities of Jekyll.
