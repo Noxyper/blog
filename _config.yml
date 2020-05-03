@@ -38,47 +38,37 @@ defaults:
       type: "post"
     values:
         layout: "posts"
-        permalink: /:categories/:title
+        permalink: blog/:categories/:title
   - 
     scope:
       path: "_posts/delivery-demolition"
       type: "post"
     values:
-        layout: "posts"
         categories: update games delivery-demolition
-        permalink: /:categories/:title
   - 
     scope:
       path: "_posts/tips-and-tricks"
       type: "post"
     values:
-        layout: "posts"
         categories: learning tips-and-tricks
-        permalink: /:categories/:title
   - 
     scope:
       path: "_posts/tutorials"
       type: "post"
     values:
-        layout: "posts"
         categories: learning tutorials
-        permalink: /:categories/:title  
   - 
     scope:
       path: "_posts/university"
       type: "post"
     values:
-        layout: "posts"
         categories: update university
-        permalink: /:categories/:title
   - 
     scope:
       path: "_posts/updates"
       type: "post"
     values:
-        layout: "posts"
         categories: update
-        permalink: /:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
