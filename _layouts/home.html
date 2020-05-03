@@ -1,0 +1,17 @@
+---
+layout: wrapper
+---
+<section id="blog-posts">
+	<div class="background" style="background-size: 22.5em; height: 72vh;">
+		<div class="blog-name half-screen-hide"></div>
+		<div class="blog-container blog-selection">
+		{% for post in site.posts %}
+			<ul>
+				<a href="{{post.url}}">{{post.title}}</a>
+				{{post.excerpt}}
+			</ul>
+			<hr>
+		{% endfor %}
+		</div>
+	</div>
+</section>
