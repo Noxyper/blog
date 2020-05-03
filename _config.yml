@@ -27,6 +27,7 @@ url: "http://naomiwiren.com" # the base hostname & protocol for your site, e.g. 
 twitter_username: Noxyper
 github_username:  Noxyper
 
+root: /Blog
 # Build settings
 plugins:
   - jekyll-feed
