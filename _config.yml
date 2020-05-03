@@ -22,7 +22,7 @@ title: Naomi Wirén - Blog
 email: business@naomiwiren.com
 description: >- # this means to ignore newlines until "baseurl:"
   Everything I learn that I feel like sharing will be posted here
-baseurl: "blog" # the subpath of your site, e.g. /blog
+baseurl: "blog.naomiwiren.com" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Noxyper
 github_username:  Noxyper
