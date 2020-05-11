@@ -12,10 +12,11 @@ I've been working on this project on-and-off for the past couple of months and I
 
 This game is getting a real launch a few months from now!
 
-It is still unclear when this will be, but there will be a full version of the game with currently planned for 60 levels, revamped graphics, more story and more mechanics! I will post more about the game on my Twitter (@NaomiWiren) in the coming months, and major updates will show up here. However, as I am in university at the moment and due to the on-going pandemic, this will stay as a hobby project and Delivery Demolition is not going to be my main focus for most of my time.
+It is still unclear when this will be, but there will be a full version of the game with currently planned for 60 levels, revamped graphics, more story and more mechanics! I will post more about the game on my Twitter ([@NaomiWiren][twitter]) in the coming months, and major updates will show up here. However, as I am in university at the moment and due to the on-going pandemic, this will stay as a hobby project and Delivery Demolition is not going to be my main focus for most of my time.
 
 It's great to work on this project again, and I hope you will enjoy it.
 
 *This was originally posted on my [itch.io page][itch-page]. There have been some minor adjustments for this website.*
 
+[twitter]: https://www.twitter.com/NaomiWiren/
 [itch-page]: https://noxyper.itch.io/delivery-demolition/devlog/120719/stability-update-and-more
