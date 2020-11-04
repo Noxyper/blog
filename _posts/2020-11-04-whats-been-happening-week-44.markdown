@@ -14,7 +14,7 @@ Hoo boy, that was a lot of mumbo jumbo, so let’s make it simple. WPF is all of
 
 With that out of the way, let me introduce you to my software!
 
-![chat-function](/Assets/posts/chat_function.gif)
+![chat-function](/blog/Assets/posts/chat_function.gif)
 
 Wow, so cool! This is revolutionary, industry-changing, will change the virtual landscape forever, I hear you say through the monitor. Please, you humble me. But in all honesty, yes. This isn’t very impressive on the surface level. It’s two windows talking to each other, big deal. But that’s where the untrained eye is wrong! What is actually happening here is that I am using my local IP to connect two instances of the same software to each other. They don’t speak on a client level at all, they’re not “actually the same instance but two different windows so they share variables.” No, these are different clients communicating. Now, in theory, this should work cross machine, but I have yet to get that to work and that is what I will spend next week trying to solve. But let me try to explain what is happening here then, and fair warning! There will be some tech nonsense coming up so don’t be scared of that!
 
