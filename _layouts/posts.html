@@ -3,11 +3,7 @@ layout: wrapper
 ---
 <div class="blog-container">
 	<div class="blog-info blog-{{page.section}}">
-		{{% if page.section == writing %}}
-		<div class="blog-info-text bit-dark">
-		{{% else %}}
-		<div class="blog-info-text">
-		{{% endif %}}
+		<div class="blog-info-text {{% if page.section == writing %}}bit-dark{{% endif %}}">	
 			<h1 class="blog-title">{{page.title}}</h1>
 			<h5 class="blog-date">{{page.date}}</h5>
 		</div>
