@@ -1,13 +1,15 @@
 ---
 layout: wrapper
 ---
-<section id="blog-posts">
-	<div class="background" style="background-size: 22.5em; height: 72vh;">
-		<div class="blog-container blog-content">
-			<h1>{{page.title}}</h1>
-			<h5>{{page.date}}</h5>
-			
-			{{page.content}}
+<div class="blog-container">
+	<div class="blog-info blog-{{page.section}}">
+		<div class="blog-info-text">
+			<h1 class="blog-title">{{page.title}}</h1>
+			<h5 class="blog-date">{{page.date}}</h5>
 		</div>
+		<div class="blog-pattern blog-{{page.section}}"></div>
 	</div>
-</section>
+	<div class="blog-content">
+		{{page.content}}
+	</div>
+</div>

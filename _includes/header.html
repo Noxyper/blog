@@ -1,13 +1,32 @@
 <header>
-	<img src="{{ root_url }}/Assets/Nemo Banner.png" class="logo">
 	<nav>
+		<script type='text/javascript'>
+		var sourceSwap = function () {
+			var $this = $(this);
+			var newSource = $this.data('alt-src');
+			
+			$this.data('alt-src', $this.attr('src'));
+			$this.attr('src', newSource);
+			$this.fadeIn();
+		}
+		
+		var changeHeader = function () {
+			$('section#about-me').prepend('<div class="' + $this.attr('class').split(/\s+/)[0] + ' ' + $this.attr('class').split(/\s+/)[1] + ' am-delete" style="transition: none; margin: 0; position: absolute; top: 0; left: 0; clip-path: none; width: 100vw; height: 100vh; z-index: -1;"><div style="clip-path: none;"></div></div>');
+			$('section#about-me div div').addClass($this.attr('class').split(/\s+/)[0] + " pattern");					
+		}
+		
+		$(function () {
+			$('img.logo').hover(sourceSwap, sourceSwap);
+		});
+		</script>
 		<div>
 			<a href="https://naomiwiren.com/">About Me</a>
 			<a href="https://naomiwiren.com/projects">Projects</a>
 			<a href="https://naomiwiren.com/blog">Blog</a>
 			<a href="https://naomiwiren.com/Files/CV.pdf" target="_blank">CV</a>
 		</div>
+		<a href="https://naomiwiren.com/">
+			<img data-alt-src="Assets/BannerWHITE.png" src="Assets/BannerGREY.png" class="logo">
+		</a>
 	</nav>
 </header>
-<div class="nav-offset"></div>
-

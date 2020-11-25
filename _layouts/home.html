@@ -2,16 +2,18 @@
 layout: wrapper
 ---
 <section id="blog-posts">
-	<div class="background" style="background-size: 22.5em; height: 72vh;">
-		<div class="blog-name half-screen-hide"></div>
-		<div class="blog-container blog-selection">
-		{% for post in site.posts %}
-			<ul>
-				<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-				{{post.excerpt}}
-			</ul>
-			<hr>
-		{% endfor %}
+	{% for post in site.posts %}
+		<div class="blog-post">
+			<div class="blog-indicator blog-{{post.section}}">
+				<div class="blog-pattern blog-{{post.section}}">
+				</div>
+			</div>
+			<div class="blog-excerpt-text">
+				<a class="blog-link" href="{{site.baseurl}}{{post.url}}"><p>{{post.title}}</p></a>
+				<div class="blog-excerpt">
+					{{post.excerpt}}
+				</div>
+			</div>
 		</div>
-	</div>
+	{% endfor %}
 </section>

@@ -1,5 +1,5 @@
-/* PrismJS 1.20.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+c+csharp+cpp+glsl+hlsl+json+lua&plugins=show-language+toolbar */
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+aspnet+c+csharp+cpp+glsl+hlsl+lua+xml-doc+yaml&plugins=line-numbers+autolinker+file-highlight+show-language+toolbar */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -7,9 +7,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
 code[class*="language-"],
-pre[class*="language-"], 
-code.highlighter-rouge {
-	color: #E5E5E5;
+pre[class*="language-"] {
+	color: #ccc;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -36,19 +35,16 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	border-radius: .3em;
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"], 
-code.highlighter-rouge {
+pre[class*="language-"] {
 	background: #2d2d2d;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"], 
-code.highlighter-rouge {
-	padding: .4em;
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
 }
@@ -62,7 +58,7 @@ code.highlighter-rouge {
 }
 
 .token.punctuation {
-	color: #E5E5E5;
+	color: #ccc;
 }
 
 .token.tag,
@@ -79,7 +75,7 @@ code.highlighter-rouge {
 .token.boolean,
 .token.number,
 .token.function {
-	color: #FFDD7F;
+	color: #f08d49;
 }
 
 .token.property,
@@ -94,7 +90,7 @@ code.highlighter-rouge {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: #FFBF00;
+	color: #cc99cd;
 }
 
 .token.string,
@@ -108,7 +104,7 @@ code.highlighter-rouge {
 .token.operator,
 .token.entity,
 .token.url {
-	color: #B5012B;
+	color: #67cdcc;
 }
 
 .token.important,
@@ -127,6 +123,50 @@ code.highlighter-rouge {
 	color: green;
 }
 
+pre[class*="language-"].line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
+
+.token a {
+	color: inherit;
+}
 div.code-toolbar {
 	position: relative;
 }

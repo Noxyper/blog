@@ -3,6 +3,7 @@ layout: posts
 title:  "Delivery Demolition Continues Development!"
 date:   2020-01-22 21:05:00 +0100
 categories: update delivery-demolition
+section: game
 ---
 
 

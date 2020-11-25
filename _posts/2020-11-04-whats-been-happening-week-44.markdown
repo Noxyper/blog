@@ -1,12 +1,13 @@
 ---
 layout: posts
-title:  "What' Been Happening: Week 44"
+title:  "What's Been Happening: Week 44"
 date:   2020-10-29 00:05:00 +0100
 categories: update dev-diary
+section: code
 ---
 
 # Dev Diary: Week 44
-As university dawns again, so thus keeping an active work schedule. This, for me, means keeping a dev log that keeps track of everything I'm doing and to keep the brain juices flowing! I'll try to make the nonsense I spit make sort of sense, but I apologise pre-emptively if some of the stuff sounds like tech magic.
+As university dawns again, so does keeping an active work schedule. This, for me, means keeping a dev log that keeps track of everything I'm doing and to keep the brain juices flowing! I'll try to make the nonsense I spit make sort of sense, but I apologise pre-emptively if some of the stuff sounds like tech magic.
 So, without further ado, here’s the rundown of what I’ve done week 44!
 
 ## API Work
