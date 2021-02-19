@@ -265,10 +265,8 @@ public abstract class ClickInteraction : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp; 
-            ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
+        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp; ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
         {
-
             ClickMovement.Instance.lastPointHit = new RaycastHit();
             Action();
         }
@@ -312,10 +310,8 @@ public abstract class ClickInteraction : MonoBehaviour
 
     protected void Update()
     {
-        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp; 
-            ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
+        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp; ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
         {
-
             ClickMovement.Instance.lastPointHit = new RaycastHit();
             Action();
         }
@@ -337,8 +333,7 @@ public abstract class ClickInteractionWithDependency : ClickInteraction
 
     new void Update()
     {
-        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp 
-            ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
+        if (Vector3.Distance(GetComponent&lt;Collider>().bounds.center, ClickMovement.Instance.player.transform.position) &lt;= checkRadius &amp;&amp; ClickMovement.Instance.lastPointHit.collider == GetComponent&lt;Collider>())
         {
             ClickMovement.Instance.lastPointHit = new RaycastHit();
             if (dependencyAction.DependencyMet)
