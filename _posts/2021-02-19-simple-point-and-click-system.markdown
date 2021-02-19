@@ -3,7 +3,7 @@ layout: posts
 title:  "Simple 3D Point & Click System"
 date:   2021-02-19 00:42:40 +0100
 categories: tutorial
-section: games
+section: game
 ---
 
 # So, you want to make a point and click system?
