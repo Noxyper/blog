@@ -211,17 +211,13 @@ Now for some final clean-up. We're still missing a Player class! Not to worry, a
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
-[RequireComponent(typeof(CharacterMoveAnimation))]
 public class Player : MonoBehaviour
 {
     public NavMeshAgent NavAgent { get; private set; }
-    public CharacterMoveAnimation AnimationHelper { get; private set; }
     
     void Awake()
     {
         NavAgent = GetComponent&lt;NavMeshAgent>();
-        AnimationHelper = GetComponent&lt;CharacterMoveAnimation>();
     }
 }
 </code></pre>
