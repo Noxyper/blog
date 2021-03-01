@@ -3,7 +3,7 @@ layout: wrapper
 ---
 <section id="blog-posts">
 	{% for post in site.posts %}
-		<div class="blog-post {{post.categories}}">
+		<div class="blog-post {{post.published}}">
 			<div class="blog-indicator blog-{{post.section}}">
 				<div class="blog-pattern blog-{{post.section}}">
 				</div>
