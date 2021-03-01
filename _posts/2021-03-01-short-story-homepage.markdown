@@ -22,8 +22,8 @@ hidden: true
 [Last Train West][last-train-west]
 > Civilisation came to an end faster than a speeding train.
 
-[picture-of-1000-years]: https://www.naomiwiren.com/blog/short-story/picture-of-1000-years
-[curse-for-the-masses]: https://www.naomiwiren.com/blog/short-story/curse-for-the-masses
+[picture-of-1000-years]: https://www.naomiwiren.com/blog/short-story/picture-of-a-thousand-years
+[curse-for-the-masses]: https://www.naomiwiren.com/blog/short-story/a-curse-for-the-masses
 [birdsong]: https://www.naomiwiren.com/blog/short-story/birdsong
 [porcelain-men]: https://www.naomiwiren.com/blog/short-story/porcelain-men
 [last-train-west]: https://www.naomiwiren.com/blog/short-story/last-train-west

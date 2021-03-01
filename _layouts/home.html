@@ -3,6 +3,7 @@ layout: wrapper
 ---
 <section id="blog-posts">
 	{% for post in site.posts %}
+		{% unless post.categories contains 'hidden' %}
 		<div class="blog-post">
 			<div class="blog-indicator blog-{{post.section}}">
 				<div class="blog-pattern blog-{{post.section}}">
@@ -12,5 +13,6 @@ layout: wrapper
 				<a class="blog-link" href="{{site.baseurl}}{{post.url}}"><p>{{post.title}}</p></a>
 			</div>
 		</div>
+		{% endunless %}
 	{% endfor %}
 </section>
