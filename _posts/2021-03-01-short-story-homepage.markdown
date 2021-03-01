@@ -2,7 +2,7 @@
 layout: posts
 title:  "The Short Story Directory"
 date:   2021-03-01 20:03:52 +0100
-categories: short-story hidden
+categories: short-story unpublished
 section: writing
 ---
 
