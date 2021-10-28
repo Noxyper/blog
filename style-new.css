@@ -411,7 +411,7 @@ section#about-me p {
 
 /*Blog*/
 section#blog-posts {
-	margin: 5vh 15vw;
+	margin: 15vh 15vw;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 300;
 	background-color: rgba(189, 189, 189, 1);
