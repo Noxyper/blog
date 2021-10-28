@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     width: 100%;
-	background-color: #e1e1e1;
+	background-color: #323232;
 }
 
 /*Navigation*/
@@ -13,10 +13,9 @@ body {
 header {
 	height: auto;
     position: sticky;
-	padding: 2vh 0;
+	padding: 0 0;
     width: 100%;
-    z-index: 2;
-	background-color: #bdbdbd;
+	z-index: 10;
 }
 
 header img {
@@ -33,10 +32,18 @@ header img:hover {
 }
 
 nav {
+	position: fixed;
+	top: 2vh;
+	left: 2vw;
+	
+	z-index: 10;
+	
 	width: auto;
 	height: inherit;
 	display: block;
 
+	background-color: #bdbdbd;
+	border-radius: 0.8vh;
     color: #424242;
 	
     font-size: 1.8vh;
@@ -46,6 +53,7 @@ nav {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 1vh 1vh;
 }
 
 nav div {
@@ -83,13 +91,15 @@ section.backdrops {
 	padding: 0;
 	white-space: nowrap;
 	overflow: hidden;
+	
+	clip-path: polygon(-10% 0%, 110% 0%, 110% 85%, -10% 100%);
 }
 
 section > .backdrop {
 	transition: 0.2s ease-in-out;
 
 	width: 50%;
-	height: 25vw;
+	height: 33vw;
 	margin: 0 -8.33vw;
 	display: inline-block;
 	position: relative;
@@ -111,8 +121,7 @@ section > .backdrop h1 {
 	height: auto;
 		
 	text-align: center;
-	font-size: 10em;
-	font-size: 6.25vw;
+	font-size: 5.25vw;
     font-family: 'Work Sans', sans-serif;
 	font-weight: 600;
 	color: #424242;
@@ -134,8 +143,8 @@ section > .backdrop:hover h1.on-hover {
 }
 
 @keyframes animatedBackground {
-	from { background-position: 100% 0; }
-	to { background-position: 0 100%; }
+	from { background-position: 100vw 0; }
+	to { background-position: 0 100vh; }
 }
 
 .pattern {
@@ -148,16 +157,20 @@ section > .backdrop:hover h1.on-hover {
 
 .writing-bd.backdrop, .blog-info.blog-writing, .blog-indicator.blog-writing {
 	background-color: #eda900;
-	
-	clip-path: polygon(0% 0%, 100% 0%, 83.33% 100%, 8.33% 100%);
+}
+
+.writing-bd.backdrop {
+	clip-path: polygon(0% 0%, 100% 0%, 83.33% 100%, 8.33% 100%);	
 }
 
 .writing-bd.pattern, .blog-pattern.blog-writing {
 	background-image: url("Assets/Graphics/PencilPattern.png");
 	background-size: 5em;
 	filter: invert(71%) sepia(63%) saturate(2886%) hue-rotate(4deg) brightness(96%) contrast(104%);
-	
-	clip-path: polygon(0% 0%, 100% 0%, 83.33% 100%, 8.33% 100%);
+}
+
+.writing-bd.pattern {
+	clip-path: polygon(0% 0%, 100% 0%, 83.33% 100%, 8.33% 100%);	
 }
 
 .code-bd.backdrop, .blog-info.blog-code, .blog-indicator.blog-code {
@@ -183,7 +196,7 @@ section > .backdrop:hover h1.on-hover {
 /*Gallery*/
 section.galleries {
 	width: 100%;
-	height: 36vw;
+	height: 48vw;
 	position: relative;
 }
 
@@ -201,7 +214,7 @@ section .gallery {
 section .gallery a {
 	width: inherit;
 	text-decoration: none;
-	color: #424242;
+	color: #bdbdbd;
 }
 
 section .writing-ga.gallery {
@@ -219,7 +232,9 @@ section .games-ga.gallery {
 .gallery-card {
 	position: relative;
 	margin: 1vw;
-	background-color: rgba(189, 189, 189, 1);
+	background-color: #424242;
+	/*clip-path: polygon(25% 0%, 100% 0%, 83.33% 100%, 8.33% 100%);*/
+	clip-path: polygon(0% 0%, 100% 0%, 98.5% 85%, 33.33% 100%, 0% 100%);
 	
 	height: 10vw;
 	width: inherit;
@@ -235,8 +250,8 @@ section .games-ga.gallery {
 .gac-band {
 	position: absolute;
 	height: 100%;
-	width: 0.5vw;
-	right: 1.5vw;
+	width: 1.5vw;
+	right: 0.5vw;
 	opacity: 0.6;
 }
 
@@ -281,8 +296,8 @@ section .games-ga.gallery {
 	bottom: 0;
 	right: 0;
 	width: 100%;
-	height: 1vw;
-	background: linear-gradient(rgba(189, 189, 189, 0), rgba(189, 189, 189, 1) 50%);
+	height: 1.5vh;
+	background: linear-gradient(rgba(66, 66, 66, 0), rgba(66, 66, 66, 1) 50%);
 }
 
 .writing-gac-band {
@@ -302,6 +317,7 @@ section#about-me {
 	overflow-x: hidden;
 	position:relative;
 	height: 100vh;
+	background-color: #bdbdbd;
 }
 
 section#about-me img {
@@ -311,12 +327,12 @@ section#about-me img {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-	z-index: -1;
+	z-index: 0;
 }
 
 section#about-me img.am-front {
 	visibility: hidden;
-	z-index: 10;
+	z-index: 1;
 }
 
 section#about-me div.am-info {
@@ -327,6 +343,7 @@ section#about-me div.am-info {
 	left: 10%;
 	width: 50%;
 	padding: 1%;
+	z-index: 2;
 }
 
 section#about-me h1 {
@@ -339,7 +356,9 @@ section#about-me h1 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 300;
 	font-size: 2.88em;
-	/*font-size: 1.8vw;*/
+	
+	color: #bdbdbd;
+    text-shadow: .05em .05em #424242;
 }
 
 section#about-me .am-name {
@@ -362,6 +381,7 @@ section#about-me div.am-text {
 	padding: 1%;
 	border-radius: 0.8vh;
 	background-color: rgba(66, 66, 66, 0.6);
+	z-index: 2;
 }
 
 section#about-me p {
@@ -406,7 +426,13 @@ section#blog-posts {
 	padding: 2vh 2vw;
 }
 
+.blog-post.unpublished {
+	visibility: hidden;
+}
+
 .blog-indicator {
+	transition: 0.2s ease-in-out;
+	
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -423,7 +449,7 @@ section#blog-posts {
 }
 
 .blog-excerpt-text {
-	width: 86%;
+	width: 81%;
 	margin: 0;
 }
 
@@ -453,8 +479,12 @@ section#blog-posts {
 	color: #424242;
 }
 
-.blog-link p:hover {
+.blog-post:hover > .blog-excerpt-text > .blog-link p {
 	font-size: 2.1em;
+}
+
+.blog-post:hover > .blog-indicator {
+	width: 15vw;
 }
 
 div.blog-container {
@@ -497,13 +527,25 @@ div.blog-content {
 	top: 0;
 	width: 100%;
 	height: auto;
+	color: #bdbdbd;
+}
+
+.blog-info-text.bit-dark {
+	padding: 5vh 0;
+
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: inherit;
+	color: #424242;
 }
 
 .blog-title, .blog-date {
 	position: relative;
 	margin: auto auto;
 	z-index: 10;
-	color: #bdbdbd;
 }
 
 .blog-pattern {
@@ -599,17 +641,18 @@ ul.socials {
 	section#about-me div.am-text {
 		left: 24%;
 	}
-	
-	section#about-me img.am-front {
-		z-index: -1;
-	}
 }
 
-@media screen and (orientation: portrait), (max-width: 800px) {
+@media screen and (orientation: portrait), (max-width: 800px) {	
+	nav {
+		top: auto;
+		bottom: 2vh;
+	}
+	
 	/*Gallery*/
 	section.galleries {
 		width: 100%;
-		height: 88.5vw;
+		height: 118vw;
 		position: relative;
 	}
 	
@@ -643,6 +686,7 @@ ul.socials {
 	
 	.gallery-card {
 		height: 27.5vw;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	}
 	
 	.gac-image {
@@ -653,6 +697,10 @@ ul.socials {
 	}
 	
 	/*About Me*/
+	section#about-me .am-info {
+		position: initial;
+	}
+	
 	section#about-me div.am-text {
 		left: 0%;
 		width: 100%;
@@ -672,10 +720,19 @@ ul.socials {
 		font-size: 1.28vmax;
 	}
 	
+	section#about-me img {
+		object-position: 75% center;
+		object-fit: cover;
+	}
+	
+	.fadeIn {
+		-webkit-animation: initial;
+		animation: initial;
+		visibility: visible;
+	}
+	
 	/*Socials*/
 	.fab, .fas {
-		margin: 0 -2.25vmax;
-		padding: 2.5vmax 3.5vmax;
-		font-size: 3.5vmax;
+		visibility: hidden;
 	}
 }
